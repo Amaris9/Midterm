@@ -6,8 +6,8 @@ alert(
 // Creates variables
 let count = 0;
 let poison = false;
-let poisonQuest1, poisonQuest2, poisonQuest3, poisonQuest4, poisonQuest5;
-let herbalQuest1, herbalQuest2, herbalQuest3, herbalQuest4;
+let poisonQuest1, poisonQuest2;
+let herbalQuest1, herbalQuest2;
 const yourName = prompt("Hello, my name is Belladonna. What is your name?");
 
 // Makes question appear in body
@@ -20,23 +20,13 @@ document.body.appendChild(herbalQuest1);
 const aloeButton = document.createElement("button");
 aloeButton.textContent = "Aloe";
 document.body.appendChild(aloeButton);
-//aloeButton.addEventListener("click");
 
 // Creates Yarrow button
 const yarrowButton = document.createElement("button");
 yarrowButton.textContent = "Yarrow";
-yarrowButton.body.appendChild(yarrowButton);
-//yarrowButton.addEventListener("click");
+document.body.appendChild(yarrowButton);
 
 function firstQuestion() {
-  //if(yarrowButton)
-}
-function herbalQuestions() {}
-
-function poisonQuestions() {
-  // Makes question appear in body(worked outside of function)
-  poisonQuest1 = document.createElement("p");
-  poisonQuest1.textContent =
-    "While parsly and hemlock look very similar, hemlock can be fatal in high enough doses.Which of these two are hemlock";
-  document.body.appendChild(poisonQuest1);
+  if (yarrowButton) {
+  }
 }
